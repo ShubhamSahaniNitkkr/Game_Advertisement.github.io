@@ -2,7 +2,13 @@
 
 > Game catalog with search, filters, and detail pages driven by JSON data.
 
-![Screenshot](./screenshot.png)
+
+
+
+
+
+
+
 > Add `screenshot.png` in project root for preview.
 
 ## Purpose
