@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Games | for Real Players</title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link href="css/responsive-base.css" rel="stylesheet" type="text/css">
+  <link href="css/home.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-image: url('images/gameswall/wall.jpg');
+      color: #c83985;
+    }
+    .table-bordered { border: 3px dashed #c83985; }
+    .btn-default:hover { background-color: transparent; }
+    .table-hover>tbody>tr:hover { background-color: rgba(0,0,0,0.10); cursor: pointer; }
+    .table>tbody>tr>td { padding-top: 25px; padding-left: 25px; }
+    .form-control {
+      height: 108px;
+      font-size: 75px;
+      border: 6px solid #c83985;
+      color: #c83985;
+      border-radius: 25px;
+    }
+    .btn { position: relative; bottom: 7px; }
+    th { cursor: pointer; position: relative; top: -9px; }
+    @media (max-width: 768px) {
+      .form-control { height: 60px; font-size: 24px; }
+      .jumbotron-subheading[style*="left: 1230px"] { left: auto !important; }
+      .banner img { width: 100% !important; height: auto !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="background-color">
+      <img src="images/gameswall/banner.jpg" class="jumbotron-image hidden-xs" alt="" width="1440" height="380">
+    </div>
+  </div>
+
+  <p class="jumbotron-subheading text-center" style="border: 5px solid mediumvioletred;top:45px;">List of Games</p>
+  <p class="jumbotron-subheading text-center" style="border: 5px solid mediumvioletred;top:45px;left: 1230px;">
+    <a href="index.html">Home</a> <span class="glyphicon glyphicon-arrow-right"></span>
+  </p>
+
+  <div class="container-fluid text-center backgroun" style="margin-top:55px;">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-3">
+        <img class="status_glyphicon" src="images/day.svg" alt="Day" loading="lazy">
+        <p class="btn btn-default area_of_score_btn" style="border-color:#4a90e2;">&nbsp;99&nbsp;&nbsp;</p><br>DAY
+      </div>
+      <div class="col-md-3">
+        <img class="status_glyphicon" src="images/completion.svg" alt="Completion" loading="lazy">
+        <p class="btn btn-default area_of_score_btn" style="border-color:#48cdaf;">45%</p><br>COMPLETION
+      </div>
+      <div class="col-md-3">
+        <img class="status_glyphicon" src="images/score.svg" alt="Score" loading="lazy">
+        <p class="btn btn-default area_of_score_btn" style="border-color:#bd10e0;">&nbsp;33&nbsp;&nbsp;</p><br>SCORE
+      </div>
+      <div class="col-md-3">
+        <img class="status_glyphicon" src="images/accuracy.svg" alt="Ratings" loading="lazy">
+        <p class="btn btn-default area_of_score_btn" style="border-color:#7a10d8">82%</p><br>RATINGS
+      </div>
+    </div>
+    <br><br><br><br>
+    <hr style="border-top: 5px solid #eee;padding-top:14px;">
+  </div>
+
+  <div class="container">
+    <br>
+    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+    <br>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th onclick="sortTable(0)" style="padding-bottom: 19px;padding-top:32px;color:black;">No.</th>
+            <th onclick="sortTable(1)" style="padding-bottom: 19px;padding-top:32px;color:black;">Name</th>
+            <th onclick="sortTable(2)" style="padding-bottom: 19px;padding-top:32px;color:black;">Platform:</th>
+            <th onclick="sortTable(3)" style="padding-left:18px;padding-bottom: 19px;padding-top:32px;color:black;">Score:</th>
+            <th onclick="sortTable(4)" style="padding-left:18px;padding-bottom: 19px;padding-top:32px;color:black;">Category</th>
+            <th onclick="sortTable(5)" style="padding-left:18px;padding-bottom: 19px;padding-top:32px;color:black;">Editors Choice</th>
+          </tr>
+        </thead>
+        <tbody id="myTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <h2 class="text-center text-danger"><span class="red">Please Click on Head of table For sorting!</span></h2>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap/js/jquery-2.0.2.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/details.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Games | for Real Players</title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link href="css/responsive-base.css" rel="stylesheet" type="text/css">
+  <link href="css/home.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-image: url('images/gameswall/wall.jpg');
+    }
+    .k p { font-size: 16px; }
+    .hero-video {
+      width: 100%;
+      max-width: 100%;
+      aspect-ratio: 16 / 9;
+      height: auto;
+      min-height: 220px;
+    }
+    @media (max-width: 768px) {
+      .container-fluid.k {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-color">
+    <iframe class="hero-video" src="https://www.youtube.com/embed/RRViSISYi2g?rel=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <p class="jumbotron-heading col-xs-12 text-center" style="font-size:40px;background-color: #66339961;">
+      <span style="color:red;">"</span> Gaming has been a great way to get to know people. That's part of what I love about games, that they are social !
+      <span style="color:red;">"</span>
+    </p>
+    <p class="jumbotron-subheading text-center" style="border: 5px solid mediumvioletred;top:365px;">
+      <a href="games_detail.html" style="background-color: white; color:rgba(0, 0, 0, 0.77);text-decoration:none;" class="search">Check Games!</a>
+    </p>
+  </div>
+
+  <div class="container-fluid k" style="margin-top:100px;margin-right: 35px; margin-left: 35px; margin-bottom: 65px;">
+    <p class="jumbotron-subheading text-center" style="border: 5px solid mediumvioletred;font-size: 24px;border-radius: 29px;">
+      <a href="games_detail.html" style="background-color: white; color:rgba(0, 0, 0, 0.77);" class="search">Trending Games!</a>
+    </p>
+    <div id="trending-games"></div>
+  </div>
+
+  <script src="bootstrap/js/jquery-2.0.2.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
