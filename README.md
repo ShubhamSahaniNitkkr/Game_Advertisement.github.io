@@ -28,8 +28,6 @@ Game catalog with search, filters, and detail pages driven by JSON data.
 npm install && npm run dev
 ```
 
-> On Node 17+, if build fails: `export NODE_OPTIONS=--openssl-legacy-provider`
-
 ## Live Demo
 
 [https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/Game_Advertisement.github.io/](https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/Game_Advertisement.github.io/)
