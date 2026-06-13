@@ -30,7 +30,7 @@ npm install && npm run dev
 
 ## Live Demo
 
-[https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/Game_Advertisement.github.io/](https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/Game_Advertisement.github.io/)
+[https://shubhamsahaniNitkkr.github.io/Game_Advertisement.github.io/](https://shubhamsahaniNitkkr.github.io/Game_Advertisement.github.io/)
 
 
 ## Performance & UI
